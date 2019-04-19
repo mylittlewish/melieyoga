@@ -1,0 +1,164 @@
+body,
+a,
+div,
+img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:link,
+a:active {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------- */
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.Logo {
+  height: 10vw;
+  width: 10vw;
+  min-height: 100px;
+  min-width: 100px;
+  background-image: url("../img/logo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Info {
+  color: #fff;
+  display: none;
+  margin: 2rem;
+  padding: 1rem;
+  min-width: 80vw;
+}
+
+.Info.visible {
+  display: block;
+}
+
+.InfoDate {
+  font-weight: bold;
+  line-height: 2rem;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.InfoDate > sup {
+  text-transform: none;
+}
+
+.InfoDetails {
+  font-weight: bold;
+}
+
+.InfoDetails > a {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------- */
+
+.Menu {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.MenuItem {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.MenuItem:last-child {
+  flex-grow: 1;
+}
+
+.MenuItem a {
+  color: #4b4a4b;
+}
+
+.MenuItemTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
+}
+
+.MenuItemTop img {
+  height: 100%;
+}
+
+.MenuItemBottom {
+  border-top: 1vh solid #4b4a4b;
+  height: 9vh;
+  line-height: 9vh;
+}
+
+.SocialLinks > * {
+  margin-left: 0.5rem;
+}
+
+.SocialLinks > *:first-child {
+  margin-left: 0;
+}
+
+/* --------------------------------------------------------------- */
+
+#Info1 {
+  background-color: rgb(3, 89, 115, 0.7);
+}
+
+#MenuItem1 {
+  color: rgb(3, 89, 115);
+}
+
+#Info2 {
+  background-color: rgb(237, 116, 130, 0.7);
+}
+
+#MenuItem2 {
+  color: rgb(237, 116, 130);
+}
+
+#Info3 {
+  background-color: rgb(108, 92, 122, 0.7);
+}
+
+#MenuItem3 {
+  color: rgb(108, 92, 122);
+}
