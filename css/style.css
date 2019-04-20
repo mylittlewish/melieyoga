@@ -17,7 +17,6 @@ a:active {
 }
 
 #root {
-  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -115,6 +114,7 @@ a:active {
 }
 
 .Contacts {
+  cursor: none;
   flex-grow: 1;
 }
 
@@ -180,7 +180,7 @@ a:active {
 
 @media (max-width: 400px) {
   .Main {
-    height: 70vh;
+    height: 60vh;
   }
 
   .Logo {
@@ -189,11 +189,12 @@ a:active {
   }
 
   .Menu {
-    height: 30vh;
+    height: 40vh;
     flex-direction: column;
   }
 
   .Nav {
+    height: 30vh;
     justify-content: space-between;
   }
 
@@ -207,6 +208,25 @@ a:active {
   }
 
   .Contacts {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .ContactsTop {
     display: none;
+  }
+
+  .ContactsBottom {
+    border-top: 0;
+    height: 9vh;
+    line-height: 9vh;
   }
 }
