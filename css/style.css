@@ -86,14 +86,24 @@ a:active {
 /* --------------------------------------------------------------- */
 
 .Menu {
+  overflow: hidden;
   height: 40vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-start;
 }
 
-.MenuItem {
+.Nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.NavItem,
+.Contacts {
   cursor: pointer;
   height: 100%;
   display: flex;
@@ -104,26 +114,29 @@ a:active {
   text-align: center;
 }
 
-.MenuItem:last-child {
+.Contacts {
   flex-grow: 1;
 }
 
-.MenuItem a {
+.Contacts a {
   color: #4b4a4b;
 }
 
-.MenuItemTop {
+.NavItemTop,
+.ContactsTop {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 30vh;
 }
 
-.MenuItemTop img {
-  height: 100%;
+.NavItemTop img {
+  height: 30vh;
+  width: 30vh;
 }
 
-.MenuItemBottom {
+.NavItemBottom,
+.ContactsBottom {
   border-top: 1vh solid #4b4a4b;
   height: 9vh;
   line-height: 9vh;
@@ -143,7 +156,7 @@ a:active {
   background-color: rgb(3, 89, 115, 0.7);
 }
 
-#MenuItem1 {
+#NavItem1 {
   color: rgb(3, 89, 115);
 }
 
@@ -151,7 +164,7 @@ a:active {
   background-color: rgb(237, 116, 130, 0.7);
 }
 
-#MenuItem2 {
+#NavItem2 {
   color: rgb(237, 116, 130);
 }
 
@@ -159,6 +172,41 @@ a:active {
   background-color: rgb(108, 92, 122, 0.7);
 }
 
-#MenuItem3 {
+#NavItem3 {
   color: rgb(108, 92, 122);
+}
+
+/* --------------------------------------------------------------- */
+
+@media (max-width: 400px) {
+  .Main {
+    height: 70vh;
+  }
+
+  .Logo {
+    height: 50vw;
+    width: 50vw;
+  }
+
+  .Menu {
+    height: 30vh;
+    flex-direction: column;
+  }
+
+  .Nav {
+    justify-content: space-between;
+  }
+
+  .NavItemTop img {
+    height: calc(100vw / 3);
+    width: calc(100vw / 3);
+  }
+
+  .NavItemBottom {
+    font-size: 13px;
+  }
+
+  .Contacts {
+    display: none;
+  }
 }
