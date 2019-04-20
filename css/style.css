@@ -16,6 +16,10 @@ a:active {
   text-decoration: none;
 }
 
+html {
+  font-family: "Lato", sans-serif;
+}
+
 #root {
   width: 100vw;
   display: flex;
@@ -138,8 +142,8 @@ a:active {
 .NavItemBottom,
 .ContactsBottom {
   border-top: 1vh solid #4b4a4b;
-  height: 9vh;
-  line-height: 9vh;
+  height: 8vh;
+  line-height: 8vh;
 }
 
 .SocialLinks > * {
@@ -178,14 +182,14 @@ a:active {
 
 /* --------------------------------------------------------------- */
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .Main {
     height: 60vh;
   }
 
   .Logo {
-    height: 50vw;
-    width: 50vw;
+    height: 40vw;
+    width: 40vw;
   }
 
   .Menu {
@@ -209,8 +213,8 @@ a:active {
 
   .Contacts {
     position: fixed;
-    top: 40vh;
-    right: 1rem;
+    top: 1vh;
+    right: 1vh;
     height: 5vh;
     display: flex;
     flex-direction: row;
