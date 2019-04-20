@@ -212,7 +212,7 @@ a:active {
     left: 0;
     bottom: 0;
     right: 0;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -226,7 +226,6 @@ a:active {
 
   .ContactsBottom {
     border-top: 0;
-    height: 9vh;
-    line-height: 9vh;
+    line-height: 5vh;
   }
 }
