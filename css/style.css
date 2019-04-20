@@ -189,7 +189,7 @@ a:active {
   }
 
   .Menu {
-    height: 40vh;
+    height: 30vh;
     flex-direction: column;
   }
 
@@ -208,10 +208,9 @@ a:active {
   }
 
   .Contacts {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    position: fixed;
+    top: 40vh;
+    right: 1rem;
     height: 5vh;
     display: flex;
     flex-direction: row;
@@ -227,5 +226,9 @@ a:active {
   .ContactsBottom {
     border-top: 0;
     line-height: 5vh;
+  }
+
+  .ContactsBottom i {
+    color: #fff;
   }
 }
