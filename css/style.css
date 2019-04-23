@@ -34,7 +34,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   height: 60vh;
   width: 100vw;
   background-image: url("../img/bg.jpg");
@@ -44,10 +44,12 @@ html {
 }
 
 .Logo {
-  height: 10vw;
-  width: 10vw;
-  min-height: 100px;
-  min-width: 100px;
+  height: 150px;
+  width: 150px;
+  min-height: 150px;
+  min-width: 150px;
+  margin-left: 1rem;
+  margin-top: 1rem;
   background-image: url("../img/logo2.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -109,12 +111,7 @@ html {
   justify-content: flex-start;
 }
 
-.Contacts a:hover {
-  color: rgb(237, 116, 130) !important;
-}
-
-.NavItem,
-.Contacts {
+.NavItem {
   cursor: pointer;
   height: 100%;
   display: flex;
@@ -123,22 +120,14 @@ html {
   align-items: stretch;
   line-height: 2rem;
   text-align: center;
-}
-
-.Contacts {
-  cursor: none;
   flex-grow: 1;
 }
 
-.Contacts a {
-  color: #4b4a4b;
-}
-
-.NavItemTop,
-.ContactsTop {
+.NavItemTop {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   height: 30vh;
 }
 
@@ -147,8 +136,7 @@ html {
   width: 30vh;
 }
 
-.NavItemBottom,
-.ContactsBottom {
+.NavItemBottom {
   border-top: 1vh solid #4b4a4b;
   height: 8vh;
   line-height: 8vh;
@@ -160,6 +148,40 @@ html {
 
 .NavItem.disabled .NavItemText {
   opacity: 0.3;
+}
+
+/* --------------------------------------------------------------- */
+
+.Contacts {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.Contacts a {
+  color: #4b4a4b;
+}
+
+.Contacts a:hover {
+  color: rgb(237, 116, 130) !important;
+}
+
+.ContactsTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
+}
+
+.ContactsBottom {
+  border-top: 1vh solid #4b4a4b;
+  height: 8vh;
+  line-height: 8vh;
 }
 
 .SocialLinks {
@@ -211,11 +233,6 @@ html {
     height: 60vh;
   }
 
-  .Logo {
-    height: 40vw;
-    width: 40vw;
-  }
-
   .Menu {
     height: 30vh;
     flex-direction: column;
@@ -229,6 +246,8 @@ html {
   .NavItemTop img {
     height: calc(100vw / 3);
     width: calc(100vw / 3);
+    max-height: 120px;
+    max-width: 120px;
   }
 
   .NavItemBottom {
@@ -237,8 +256,8 @@ html {
 
   .Contacts {
     position: fixed;
-    top: 1vh;
-    right: 1vh;
+    top: 1rem;
+    right: 1rem;
     height: 5vh;
     display: flex;
     flex-direction: row;
