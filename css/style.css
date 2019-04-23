@@ -62,6 +62,10 @@ html {
   min-width: 80vw;
 }
 
+.Info a {
+  text-decoration: underline;
+}
+
 .Info.visible {
   display: block;
 }
@@ -103,6 +107,10 @@ html {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
+}
+
+.Contacts a:hover {
+  color: rgb(237, 116, 130) !important;
 }
 
 .NavItem,
@@ -162,12 +170,12 @@ html {
   margin-left: 0.5rem;
 }
 
-.SocialLinks > *:hover {
-  color: rgb(237, 116, 130);
-}
-
 .SocialLinks > *:first-child {
   margin-left: 0;
+}
+
+#MailIcon {
+  display: none;
 }
 
 /* --------------------------------------------------------------- */
@@ -250,5 +258,9 @@ html {
 
   .ContactsBottom i {
     color: #fff;
+  }
+
+  #MailIcon {
+    display: inline;
   }
 }
