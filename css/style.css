@@ -44,8 +44,8 @@ html {
 }
 
 .Logo {
-  height: 15vw;
-  width: 15vw;
+  height: 10vw;
+  width: 10vw;
   min-height: 100px;
   min-width: 100px;
   background-image: url("../img/logo2.png");
